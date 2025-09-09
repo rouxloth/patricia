@@ -1,7 +1,11 @@
 <html><head><script>
 
-if(!sessionStorage.getItem('loaded'))
-{ sessionStorage.setItem('loaded', 1); window.location+='?load='+Math.random(); }
+const nunc = Date.now();
+const url = new URL(window.location.href);
+const time = parseInt(url.searchParams.get('time'), 10);
+
+if (isNaN(time) || nunc - time > 2000) 
+{ url.searchParams.set('time', nunc); window.location.replace(url.href); }
 
 </script><style>
 
@@ -53,6 +57,7 @@ Liens vers Instagram, Facebook, TikTok, X
 Story Instagram intégrée
 Publication officielle avec légende et hashtags
 Compte à rebours interactif
+
 
 
 
