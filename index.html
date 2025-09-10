@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html><head><script>
+<html><head>
+  <style>
+#patlogo { width: 20%; }
+header img { display:block; margin:1% auto; }
+cite { font-size:3vw; display:block; margin:1% auto; }
+* { color: #20211f; } 
+</style>
+  
+  <script>
 
 const nunc = Date.now();
 const url = new URL(window.location.href);
@@ -9,13 +17,6 @@ if (isNaN(then)||nunc-then>2500)
 { url.searchParams.set('then', nunc); window.location.replace(url.href); }
 
 </script>
-  <style>
-#patlogo { width: 20%; } 
-#headmail { text-decoration:none; text-align:center; }
-header img, cite { display:block; margin:1% auto; }
-    cite { font-size:5vw; }
-* { color: #20211f; } 
-</style>
   </head><body>
     <header title="Votez Patricia Sonia Bekono" onclick="window.open('contactform.html','contactform')" >
 <img alt="Votez Patricia Sonia Bekono" src="patricia.png" id="patlogo">
@@ -55,6 +56,7 @@ Liens vers Instagram, Facebook, TikTok, X
 Story Instagram intégrée
 Publication officielle avec légende et hashtags
 Compte à rebours interactif
+
 
 
 
