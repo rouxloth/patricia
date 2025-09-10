@@ -2,28 +2,27 @@
 
 const nunc = Date.now();
 const url = new URL(window.location.href);
-const time = parseInt(url.searchParams.get('time'), 10);
+const then= parseInt(url.searchParams.get('then'), 10);
 
-if (isNaN(time) || nunc - time > 2000) 
-{ url.searchParams.set('time', nunc); window.location.replace(url.href); }
+if (isNaN(then)||nunc-time>2500) 
+{ url.searchParams.set('then', nunc); window.location.replace(url.href); }
 
 </script><style>
 
 #patlogo { width: 20%; } 
 #headmail { text-decoration:none; text-align:center; }
-#patlogo, #headmail { display:block; margin:1% auto; } 
+header * { display:block; margin:1% auto; } 
 * { color: #20211f; } 
 
 </style></head><body><header title="Votez Patricia Sonia Bekono" >
 
-<img alt="Votez Patricia Sonia Bekono" src="patricia.png" id="patlogo" >
-<a href="mailto:patcampagne@mailo.com" id="headmail" >contact@patriciasoniabekono.fr</a>
+<a href="mailto:patcampagne@mailo.com" id="headmail">
+<img alt="Votez Patricia Sonia Bekono" src="patricia.png" id="patlogo">contact@patriciasoniabekono.fr</a>
+Pour vous. Pour demain.
 
 </header>
 
-  slogan
-« Pour vous. Pour demain. »
-Bouton d’action :
+  Bouton d’action :
 Votez Patricia Sonia Bekono – Bulletin bleu – 21 septembre 2025
 
 📣 Section “Ma Candidature”
@@ -57,6 +56,7 @@ Liens vers Instagram, Facebook, TikTok, X
 Story Instagram intégrée
 Publication officielle avec légende et hashtags
 Compte à rebours interactif
+
 
 
 
