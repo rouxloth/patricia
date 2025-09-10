@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html><head>
-  
+    <script>
+
+let d=document,
+liste=['Accueil', 'A propos',' Services', 'Contact'];
+
+liste.forEach(string => 
+{
+let bouton=d.createElement('a');
+bouton.appendChild(document.createTextNode(string));
+alert(bouton.outerHTML);
+});
+</script>
   <style>
 header { text-align:center; }
 header * { display:block; }
@@ -59,6 +70,7 @@ Liens vers Instagram, Facebook, TikTok, X
 Story Instagram intégrée
 Publication officielle avec légende et hashtags
 Compte à rebours interactif
+
 
 
 
