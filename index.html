@@ -9,34 +9,33 @@ button { font-size:2.32ex; margin:4ex auto; padding:.89ex .89em; text-align:cent
 </style>
     <script>onerror=function() { alert(Array.from(arguments).join('\n')); }</script>
     </head><body>
-        <script>
-
-let d=document, main=d.createElement('main'),
-
-liste=['Mon message d’annonce officiel', 
-'Mon discours de clôture complet',
-'Mon engagement: une République juste, travailleuse, audacieuse, ambitieuse, heureuse et forte',
-'Mon combat contre la politique à vie',
-'Mon rattachement à EEE_PARTI',
-];
-
-liste.forEach(string => 
-{
-let bouton=d.createElement('center');
-bouton.append(d.createTextNode(string));
-main.append(bouton);
-});
-
-d.body.after(main);
-
-</script>
         <header title="Votez Patricia Sonia Bekono" >
 <img alt="Votez Patricia Sonia Bekono" 
 src="patricia.png" id="patlogo"  onclick="location.reload()">
       <cite onclick="window.open('contactform.html','contactform')">Pour vous. Pour demain.</cite>
         <button onclick="alert('Votez Patricia Sonia Bekono – Bulletin bleu – 21 septembre 2025')">Votez Patricia Sonia Bekono</button>
-</header>
-               
+</header><main></main>
+        <script>
+
+let d=document,
+    liste=['Mon message d’annonce officiel', 
+'Mon discours de clôture complet',
+'Mon engagement: une République juste, travailleuse, audacieuse, ambitieuse, heureuse et forte',
+'Mon combat contre la politique à vie',
+'Mon rattachement à EEE_PARTI',
+], 
+    
+    main=d.querySelector('main');
+            
+            liste.forEach(string => 
+{
+let bouton=d.createElement('center');
+bouton.append(d.createTextNode(string));
+main.append(bouton);
+});
+            </script>
+
+        
         📣 Section “Ma Candidature”
 Mon message d’annonce officiel
 Mon discours de clôture complet
@@ -68,6 +67,7 @@ Liens vers Instagram, Facebook, TikTok, X
 Story Instagram intégrée
 Publication officielle avec légende et hashtags
 Compte à rebours interactif
+
 
 
 
