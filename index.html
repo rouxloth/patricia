@@ -17,22 +17,26 @@ src="patricia.png" id="patlogo"  onclick="location.reload()">
 </header><main></main>
         <script>
 
-let d=document,
-    liste=['Mon message d’annonce officiel', 
-'Mon discours de clôture complet',
-'Mon engagement: une République juste, travailleuse, audacieuse, ambitieuse, heureuse et forte',
-'Mon combat contre la politique à vie',
-'Mon rattachement à EEE_PARTI',
-], 
-    
-    main=d.querySelector('main');
+let d=document;
             
-            liste.forEach(string => 
+            let liste= 
 {
-let bouton=d.createElement('center');
-bouton.append(d.createTextNode(string));
-main.append(bouton);
-});
+message: 'Mon message d’annonce officiel',
+discours: 'Mon discours de clôture complet',
+engagement: 'Mon engagement: une République juste, travailleuse, audacieuse, ambitieuse, heureuse et forte',
+combat: 'Mon combat contre la politique à vie',
+rattachement: 'Mon rattachement à EEE_PARTI',
+};
+
+let main=d.querySelector('main');
+
+for (let nom in liste) 
+{
+let ligne=d.createElement('center');
+ligne.append(d.createTextNode(nom));
+ligne.addEventListener('click', ()=>location=nom+'.html');
+main.append(ligne);
+};
             </script>
 
         
@@ -67,6 +71,7 @@ Liens vers Instagram, Facebook, TikTok, X
 Story Instagram intégrée
 Publication officielle avec légende et hashtags
 Compte à rebours interactif
+
 
 
 
