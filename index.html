@@ -30,12 +30,12 @@ rattachement: 'Mon rattachement à EEE_PARTI',
 
 let main=d.querySelector('main');
             
-            for (let cle in liste) 
+            for (let nom in liste) 
 {
 let ligne=d.createElement('center');
-ligne.append(d.createTextNode(cle));
-ligne.title=liste.cle;
-ligne.addEventListener('click', ()=>location=cle+'.html');
+ligne.append(d.createTextNode(nom));
+ligne.setAttribute('title', liste.nom);
+ligne.addEventListener('click', ()=>location=nom+'.html');
 main.append(ligne);
 };
             </script>
@@ -72,6 +72,7 @@ Liens vers Instagram, Facebook, TikTok, X
 Story Instagram intégrée
 Publication officielle avec légende et hashtags
 Compte à rebours interactif
+
 
 
 
