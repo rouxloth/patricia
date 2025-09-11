@@ -1,19 +1,8 @@
 <!DOCTYPE html>
-<html><head>
-    <script>onerror=function() { alert(Array.from(arguments).join('\n')); }</script>
-    <script>
-
-const nunc = Date.now();
-const url = new URL(window.location.href);
-const then=parseInt(url.searchParams.get('then'), 10);
-
-if (isNaN(then)||nunc-then>2500) 
-{ url.searchParams.set('then', nunc); window.location.replace(url.href); }
-
-</script>
+<html><head><script>onerror=function() { alert(Array.from(arguments).join('\n')); }</script>
     <style>
 header { text-align:center; }
-header * { display:block; }
+header img { display:block; }
 #patlogo { width: 17%; }
 cite { font-size:3.34vw; }
 * { color: #20211f; } 
@@ -77,6 +66,7 @@ Liens vers Instagram, Facebook, TikTok, X
 Story Instagram intégrée
 Publication officielle avec légende et hashtags
 Compte à rebours interactif
+
 
 
 
