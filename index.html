@@ -10,14 +10,14 @@ liste=['Mon message d’annonce officiel',
 'Mon combat contre la politique à vie',
 'Mon rattachement à EEE_PARTI'
 ];
-
-liste.forEach(string => 
+    liste.forEach(string => 
 {
 let bouton=d.createElement('a');
-bouton.append(document.createTextNode(string));
+bouton.append(d.createTextNode(string));
 alert(bouton.outerHTML);
-}
-</script>
+});
+
+    </script>
     <style>
 header { text-align:center; }
 header * { display:block; }
@@ -76,6 +76,7 @@ Liens vers Instagram, Facebook, TikTok, X
 Story Instagram intégrée
 Publication officielle avec légende et hashtags
 Compte à rebours interactif
+
 
 
 
