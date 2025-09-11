@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html><head>
     <script>
+        onerror=function() { alert(Array.from(arguments).join('\n')); }
 
 let d=document,
 
@@ -14,7 +15,7 @@ liste=['Mon message d’annonce officiel',
 liste.forEach(string => 
 {
 let bouton=d.createElement('a');
-bouton.append(d.createTextNode(string));
+bouton.append(document.createTextNode(string));
 alert(bouton.outerHTML);
 }
 </script>
@@ -76,6 +77,7 @@ Liens vers Instagram, Facebook, TikTok, X
 Story Instagram intégrée
 Publication officielle avec légende et hashtags
 Compte à rebours interactif
+
 
 
 
