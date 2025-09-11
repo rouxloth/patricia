@@ -27,15 +27,14 @@ engagement: 'Mon engagement: une République juste, travailleuse, audacieuse, am
 combat: 'Mon combat contre la politique à vie',
 rattachement: 'Mon rattachement à EEE_PARTI',
 };
+            let main=d.querySelector('main');
 
-let main=d.querySelector('main');
-            
-            for (let nom in liste) 
+            for (let cle in liste) 
 {
 let ligne=d.createElement('center');
-ligne.append(d.createTextNode(nom));
-ligne.setAttribute('title', liste.nom);
-ligne.addEventListener('click', ()=>location=nom+'.html');
+ligne.append(d.createTextNode(cle));
+ligne.setAttribute('title', liste.cle);
+ligne.addEventListener('click', ()=>location=cle+'.html');
 main.append(ligne);
 };
             </script>
@@ -72,6 +71,7 @@ Liens vers Instagram, Facebook, TikTok, X
 Story Instagram intégrée
 Publication officielle avec légende et hashtags
 Compte à rebours interactif
+
 
 
 
