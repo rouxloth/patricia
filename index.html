@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html><head>
     <script>onerror=function() { alert(Array.from(arguments).join('\n')); }</script>
+    <script>
+
+const nunc = Date.now();
+const url = new URL(window.location.href);
+const then=parseInt(url.searchParams.get('then'), 10);
+
+if (isNaN(then)||nunc-then>2500) 
+{ url.searchParams.set('then', nunc); window.location.replace(url.href); }
+
+</script>
 <script>
     let d=document,
 
@@ -25,18 +35,7 @@ header * { display:block; }
 cite { font-size:3.34vw; }
 * { color: #20211f; } 
 </style>
-
-<script>
-
-const nunc = Date.now();
-const url = new URL(window.location.href);
-const then=parseInt(url.searchParams.get('then'), 10);
-
-if (isNaN(then)||nunc-then>2500) 
-{ url.searchParams.set('then', nunc); window.location.replace(url.href); }
-
-</script>
-  </head><body>
+    </head><body>
 
 <header title="Votez Patricia Sonia Bekono" >
 <img alt="Votez Patricia Sonia Bekono" 
@@ -76,6 +75,7 @@ Liens vers Instagram, Facebook, TikTok, X
 Story Instagram intégrée
 Publication officielle avec légende et hashtags
 Compte à rebours interactif
+
 
 
 
