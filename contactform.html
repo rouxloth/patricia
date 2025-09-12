@@ -1,1 +1,35 @@
-contactform !!!
+<html><head>
+
+<style>
+
+div { background: #7ca83f; margin:2% auto 0; padding:2%; width:66%; }
+label { font-size: 2.32vw; }
+input, textarea { display:block; margin:-2.43ex auto 0; font-size: 2vw; width:60%; padding:1%; }
+
+</style>
+
+<script>onerror=function() { alert(Array.from(arguments).join('\n')); }</script>
+
+    </head><body>
+
+<script>
+
+let d=document;
+let form=d.createElement('form');
+let formulaire=['nom', 'prénom', 'mail', 'téléphone', 'message'];
+
+formulaire.forEach(libelle => 
+{
+let div=d.createElement('div'), label=d.createElement('label');
+label.append(d.createTextNode(libelle));
+div.append(label, d.createElement('input'));
+form.append(div);
+});
+
+let divs=form.querySelectorAll('div');
+zediv=divs[divs.length-1];
+zediv.replaceChild(textarea=d.createElement('textarea'), zediv.querySelector('input'));
+textarea.value='Votez Patricia Sonia Bekono – Bulletin bleu – 21 septembre 2025';
+d.body.append(form);
+
+</script></body></html>
