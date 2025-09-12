@@ -13,11 +13,11 @@
     async function pagecharger(file) 
 { 
 const rep = await fetch(file);
-if (rep.ok) { alert(await rep.text()); } else { alert(rep.status); }
+if (rep.ok) { main.innerHTML=await rep.text(); } else { alert(rep.status); }
 }
     </script>
 
-<style>
+    <style>
 header img { width: 17%; margin:1%; }
 cite, button { display:block; }
 cite { font-size:3.43vw; margin:-6ex 7em 0; }
@@ -87,5 +87,6 @@ Liens vers Instagram, Facebook, TikTok, X
 Story Instagram intégrée
 Publication officielle avec légende et hashtags
 Compte à rebours interactif
+
 
 
