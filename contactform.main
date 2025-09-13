@@ -1,10 +1,7 @@
 <!-- contactform.main -->
 
-<script> alert(222222222222) </script>
-
 <script>
 
-let d=document;
 let form=d.createElement('form');
 let formulaire=['nom', 'prénom', 'mail', 'téléphone', 'message'];
 
