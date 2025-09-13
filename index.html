@@ -6,13 +6,15 @@
     <title>Pour vous. Pour demain</title>
     
     <script>onerror=function() { alert(Array.from(arguments).join('\n')); }</script>
-    
+
+    <script>
     ['gotoform', 'pagecharger'].forEach(nom => 
 {
 const script = document.createElement('script');
 script.src='https://rouxloth.github.io/javascript/'+nom+'.js';
 d.head.append(script);
 });
+    </script>
 
     <link rel="stylesheet" type="text/css" href="https://rouxloth.github.io/style/patricia.css">
 
@@ -79,4 +81,5 @@ Liens vers Instagram, Facebook, TikTok, X
 Story Instagram intégrée
 Publication officielle avec légende et hashtags
 Compte à rebours interactif
+
 
