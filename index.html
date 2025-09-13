@@ -7,8 +7,12 @@
     
     <script>onerror=function() { alert(Array.from(arguments).join('\n')); }</script>
     
-    <script src="https://rouxloth.github.io/javascript/pagecharger.js"></script>
-<script src="https://rouxloth.github.io/javascript/gotoform.js"></script>
+    ['gotoform', 'pagecharger'].forEach(nom => 
+{
+const script = document.createElement('script');
+script.src='https://rouxloth.github.io/javascript/'+nom+'.js';
+d.head.append(script);
+});
 
     <link rel="stylesheet" type="text/css" href="https://rouxloth.github.io/style/patricia.css">
 
@@ -75,18 +79,3 @@ Liens vers Instagram, Facebook, TikTok, X
 Story Instagram intégrée
 Publication officielle avec légende et hashtags
 Compte à rebours interactif
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
